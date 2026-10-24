@@ -1,0 +1,6 @@
+Date: 2026-10-24
+Command: Python 3 exact rational enumeration of the same 3060 cases defined in tests/test_p06_partition_no_go.py
+stdout: P06 exact tests passed: 3060
+stderr: empty
+Exit status: 0
+Independent local execution used Fraction arithmetic and checked the same mathematical assertions, with separately written control flow.
