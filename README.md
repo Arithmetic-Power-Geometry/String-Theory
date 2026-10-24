@@ -1,18 +1,41 @@
-# String-Theory: spectral identifiability research
+# Finite Spectral Reconstruction and Robust Non-Identifiability in Two-Dimensional Narain Compactifications
 
-Research-stage project. **No disproof or modification of string theory is claimed.**
+**Mohammad Amir Khusru Akhtar**  
+Usha Martin University, Ranchi, Jharkhand, India
 
-## Research question
-Can a precisely specified, physically admissible family of compactifications be distinguished by a finite set of basis-invariant interaction observations when selected mass spectra agree? What are provable certificate costs and stability margins?
+**Publication:** Akhtar, M. A. K. (2026). *Finite Spectral Reconstruction and Robust Non-Identifiability in Two-Dimensional Narain Compactifications* (Version V1). Zenodo. https://doi.org/10.5281/zenodo.23621602
 
-## Records
-- `evidence/`: append-only experimental and mathematical evidence, including failed tests and no-go findings.
-- `reference/reference.bib`: append-only BibTeX entries after source verification.
-- `reference/verification_register.csv`: source verification status and provenance.
-- `research/`: hypotheses, mathematical models, and falsification criteria.
-- `tests/`: independently runnable verification scripts.
+## Overview
 
-## Mandatory research protocol
-For every iteration: (1) inspect prior evidence and bibliography; (2) define hypotheses and assumptions; (3) reproduce all calculations; (4) document positive, negative and inconclusive tests; (5) verify metadata using primary publisher/arXiv/author sources; (6) append evidence and new sources, never silently rewrite or remove verified history; (7) commit and verify remote repository files. Do not manufacture proof, numerical results, physical implications, sources, or novelty. Preserve previous work across all experiments.
+This repository provides exact-arithmetic computations and supporting certificates for the zero-mode inverse spectral problems studied in the accompanying paper. For a two-dimensional Narain background with positive-definite metric `G`, antisymmetric field `B`, and integer momentum and winding charges `m,n`, the energy and spin are
 
-The initial inquiry is motivated by APG papers, Boolean sensitivity cospectrality and Physical Distinction Theory. These papers do not presently supply a mathematically valid compactification or novel string-theory theorem.
+```text
+E(m,n) = (m + Bn)^T G^(-1) (m + Bn) + n^T G n
+s(m,n) = m^T n
+```
+
+The analysis distinguishes charge-labelled energy evaluations, unlabelled energy multiplicities, and joint energy–spin multiplicities. It establishes exact reconstruction in specified families and non-identifiability results on unrestricted parameter domains.
+
+## Mathematical results and verification
+
+- **Five labelled evaluations:** An explicit algebraic inverse reconstructs the metric and antisymmetric field in a fixed integral charge basis.
+- **Rectangular backgrounds:** For `3/2 <= a,c <= 2` and `0 <= b <= 1/2`, unlabelled energies through `17/8` determine the unordered pair of diagonal metric entries and `b`.
+- **Exact spin-asymmetry witness:** The rational backgrounds `G = [[2,1/3],[1/3,3]]` and `B = ±[[0,1/5],[-1/5,0]]` have identical complete unlabelled energies but different joint energy–spin multiplicities. At `E = 3373/1325`, the `B+` background has multiplicities `N(E,+1)=2` and `N(E,-1)=0`; these are reversed for `B-`.
+- **Complete charge search:** The analytic bounds reduce all states of energy at most `3` to `[-4,4]^2 × [-1,1]^2`, comprising `729` candidate charges; `39` states per background satisfy the cutoff.
+- **Perturbation certificate:** Outward rational interval bounds certify spin separation throughout a four-parameter cube of radius `1/90`. The certificate covers `68` opposite-spin charge vectors with minimum interval clearance `564868/568757475`.
+- **Finite-window limitations:** The paper proves that no background-independent finite energy cutoff, even with spin-resolved multiplicities, distinguishes every duality class on unrestricted Narain moduli space.
+
+## Reproducibility resources
+
+- [Verification scripts](tests/)
+- [Computational and mathematical evidence](evidence/)
+- [Bibliographic references](reference/reference.bib)
+- [Source verification register](reference/verification_register.csv)
+
+The computations use exact rational arithmetic and integer charge enumeration. The finite certificates support the stated rational examples and parameter bounds; the continuum and genericity results also require the analytical arguments in the paper. The inequivalence claims concern spin-preserving `O(2,2;Z)` T-duality, not equivalence after worldsheet parity.
+
+## Citation
+
+Akhtar, M. A. K. (2026). *Finite Spectral Reconstruction and Robust Non-Identifiability in Two-Dimensional Narain Compactifications* (Version V1). Zenodo. https://doi.org/10.5281/zenodo.23621602
+
+Citation metadata is also provided in [CITATION.cff](CITATION.cff).
