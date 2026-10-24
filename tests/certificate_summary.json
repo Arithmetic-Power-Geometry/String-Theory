@@ -1,0 +1,21 @@
+{
+  "charge_box": "[-4,4]^2 x [-1,1]^2",
+  "candidate_charges": 729,
+  "energy_cutoff": "3",
+  "states_plus": 39,
+  "states_minus": 39,
+  "witness_energy": "3373/1325",
+  "plus_spin_plus_one": 2,
+  "plus_spin_minus_one": 0,
+  "minus_spin_plus_one": 0,
+  "minus_spin_minus_one": 2,
+  "interval_radius": "1/90",
+  "opposite_spin_rows": 68,
+  "witness_interval": [
+    "10948961/4338900",
+    "10907851/4247100"
+  ],
+  "minimum_interval_clearance": "564868/568757475",
+  "csv_sha256": "ca6e25a0aa638370b279136fd7169e21cb04c38b58011eee0db76d09da0f2cd2",
+  "status": "PASS"
+}
