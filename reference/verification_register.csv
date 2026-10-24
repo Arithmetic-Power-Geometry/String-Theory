@@ -1,0 +1,5 @@
+key,verification_date,source_url,verified_fields,status,limitation
+RabadanShiu2003,2026-10-24,https://arxiv.org/abs/hep-th/0212144,title|authors|arxiv_identifier|publication_doi,verified,Publisher issue formatting may vary
+NilssonRowlettRydell2023,2026-10-24,https://research.chalmers.se/en/publication/552274,title|authors|journal|volume|issue|pages|year|doi,verified,Full article not exhaustively inspected
+Schaefer2024,2026-10-24,https://arxiv.org/abs/2406.12868,title|author|arxiv_identifier|year,verified,Preprint publication status not confirmed
+Schaefer2026Operators,2026-10-24,https://papers.ssrn.com/sol3/Delivery.cfm/7360781.pdf?abstractid=7360781,title|author|posting_dates|ssrn_identifier,verified,Preprint; journal publication unverified
