@@ -31,6 +31,8 @@ The analysis distinguishes charge-labelled energy evaluations, unlabelled energy
 
 - [Verification scripts](tests/)
 - [Standalone paper-certificate verification](tests/verify_paper_certificates.py)
+- [Exact 68-row interval certificate (CSV)](tests/interval_certificate_68.csv)
+- [Certificate summary and SHA-256 (JSON)](tests/certificate_summary.json)
 - [Additional verification scripts](tests/)
 
 Run the two principal finite certificates from the repository root:
@@ -39,7 +41,7 @@ Run the two principal finite certificates from the repository root:
 python tests/verify_paper_certificates.py
 ```
 
-The script asserts the complete 729-charge enumeration, the 39 low-energy states in each background, the witness spin multiplicities, all 68 opposite-spin interval comparisons, and the exact minimum clearance. The analytic completeness and global non-identifiability arguments are given in the paper.
+The script asserts the complete 729-charge enumeration, the 39 low-energy states in each background, the witness spin multiplicities, all 68 opposite-spin interval comparisons, and the exact minimum clearance. It also recomputes and checks every published CSV row, the JSON summary, and the CSV SHA-256 checksum. The analytic completeness and global non-identifiability arguments are given in the paper.
 
 The computations use exact rational arithmetic and integer charge enumeration. The finite certificates support the stated rational examples and parameter bounds; the continuum and genericity results also require the analytical arguments in the paper. The inequivalence claims concern spin-preserving `O(2,2;Z)` T-duality, not equivalence after worldsheet parity.
 
