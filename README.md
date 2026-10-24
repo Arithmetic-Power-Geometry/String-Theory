@@ -3,6 +3,8 @@
 **Mohammad Amir Khusru Akhtar**  
 Usha Martin University, Ranchi, Jharkhand, India
 
+Copyright © 2026 Mohammad Amir Khusru Akhtar
+
 **Publication:** Akhtar, M. A. K. (2026). *Finite Spectral Reconstruction and Robust Non-Identifiability in Two-Dimensional Narain Compactifications* (Version V1). Zenodo. https://doi.org/10.5281/zenodo.23621602
 
 ## Overview
@@ -39,3 +41,7 @@ The computations use exact rational arithmetic and integer charge enumeration. T
 Akhtar, M. A. K. (2026). *Finite Spectral Reconstruction and Robust Non-Identifiability in Two-Dimensional Narain Compactifications* (Version V1). Zenodo. https://doi.org/10.5281/zenodo.23621602
 
 Citation metadata is also provided in [CITATION.cff](CITATION.cff).
+
+## License
+
+Original verification code and computational materials: Apache License, Version 2.0. See [LICENSE](LICENSE) and [NOTICE](NOTICE). The published manuscript and cited third-party works retain their own terms.
