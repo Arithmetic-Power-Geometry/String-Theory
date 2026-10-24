@@ -63,6 +63,38 @@ def verify():
         clearances.append(wlo-hi if hi<wlo else lo-whi)
     minimum=min(clearances)
     assert minimum==F(564868,568757475),minimum
+
+    # Independently validate the published row table and summary, if present.
+    import csv
+    import hashlib
+    import json
+    from pathlib import Path
+    base = Path(__file__).resolve().parent
+    csv_path = base / "interval_certificate_68.csv"
+    summary_path = base / "certificate_summary.json"
+    with csv_path.open(newline="", encoding="utf-8") as fh:
+        saved = list(csv.DictReader(fh))
+    assert len(saved) == len(opposite) == 68
+    indexed = {(int(r["m1"]), int(r["m2"]), int(r["n1"]), int(r["n2"])): r for r in saved}
+    assert len(indexed) == 68
+    for v in opposite:
+        row = indexed[v]
+        lo, hi = interval_energy(v)
+        side = "below" if hi < wlo else "above"
+        clearance = wlo - hi if side == "below" else lo - whi
+        assert row["spin"] == "-1"
+        assert row["energy_lower"] == str(lo)
+        assert row["energy_upper"] == str(hi)
+        assert row["side"] == side
+        assert row["clearance"] == str(clearance)
+    summary = json.loads(summary_path.read_text(encoding="utf-8"))
+    assert hashlib.sha256(csv_path.read_bytes()).hexdigest() == summary["csv_sha256"]
+    assert summary["candidate_charges"] == len(CHARGES)
+    assert summary["states_plus"] == sum(plus.values())
+    assert summary["states_minus"] == sum(minus.values())
+    assert summary["opposite_spin_rows"] == len(saved)
+    assert summary["minimum_interval_clearance"] == str(minimum)
+    print("Published CSV, JSON and SHA-256 cross-check: PASS")
     print("729-charge complete enumeration: PASS")
     print("States E<=3 per background: 39 / 39")
     print("Spin multiplicities at 3373/1325: +B=(2,0), -B=(0,2)")
