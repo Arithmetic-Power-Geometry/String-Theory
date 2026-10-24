@@ -30,9 +30,16 @@ The analysis distinguishes charge-labelled energy evaluations, unlabelled energy
 ## Reproducibility resources
 
 - [Verification scripts](tests/)
-- [Computational and mathematical evidence](evidence/)
-- [Bibliographic references](reference/reference.bib)
-- [Source verification register](reference/verification_register.csv)
+- [Standalone paper-certificate verification](tests/verify_paper_certificates.py)
+- [Additional verification scripts](tests/)
+
+Run the two principal finite certificates from the repository root:
+
+```bash
+python tests/verify_paper_certificates.py
+```
+
+The script asserts the complete 729-charge enumeration, the 39 low-energy states in each background, the witness spin multiplicities, all 68 opposite-spin interval comparisons, and the exact minimum clearance. The analytic completeness and global non-identifiability arguments are given in the paper.
 
 The computations use exact rational arithmetic and integer charge enumeration. The finite certificates support the stated rational examples and parameter bounds; the continuum and genericity results also require the analytical arguments in the paper. The inequivalence claims concern spin-preserving `O(2,2;Z)` T-duality, not equivalence after worldsheet parity.
 
