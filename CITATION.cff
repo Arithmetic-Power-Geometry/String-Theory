@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this repository or its results, please cite the Zenodo publication."
+type: software
+title: "Finite Spectral Reconstruction and Robust Non-Identifiability in Two-Dimensional Narain Compactifications"
+authors:
+  - family-names: Akhtar
+    given-names: Mohammad Amir Khusru
+    orcid: "https://orcid.org/0000-0002-3432-4199"
+version: "V1"
+date-released: "2026-10-24"
+doi: "10.5281/zenodo.23621602"
+url: "https://github.com/Arithmetic-Power-Geometry/String-Theory"
+repository-code: "https://github.com/Arithmetic-Power-Geometry/String-Theory"
+preferred-citation:
+  type: generic
+  authors:
+    - family-names: Akhtar
+      given-names: Mohammad Amir Khusru
+  title: "Finite Spectral Reconstruction and Robust Non-Identifiability in Two-Dimensional Narain Compactifications"
+  year: 2026
+  version: "V1"
+  doi: "10.5281/zenodo.23621602"
+  publisher:
+    name: Zenodo
