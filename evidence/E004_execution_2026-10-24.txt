@@ -1,8 +1,0 @@
-Execution date: 2026-10-24
-Command: python3 tests/test_p04_duality.py
-Interpreter: Python 3 with standard-library fractions.Fraction
-stdout:
-P04 exact duality tests passed
-stderr: (empty)
-exit status: 0
-The locally executed checks matched the GitHub test source's arithmetic assertions and parameter grid. No external string-theory simulation or physical validation was performed.
