@@ -1,0 +1,31 @@
+{
+  "metric": [
+    [
+      "2",
+      "1/3"
+    ],
+    [
+      "1/3",
+      "3"
+    ]
+  ],
+  "charge_box": {
+    "momentum": "[-4,4]^2",
+    "winding": "[-1,1]^2",
+    "total": 729
+  },
+  "per_sign": {
+    "nonzero_spin": 576,
+    "identical": 2,
+    "zero_endpoint": 2,
+    "half_endpoint": 2,
+    "strict": 570
+  },
+  "both_signs_polynomial_records": 1152,
+  "uniform_gap_interval": [
+    "1/10",
+    "2/5"
+  ],
+  "minimum_competitor_gap": "6/265",
+  "canonical_polynomial_records_sha256": "3ab2a33813961595c77b2e9a6e8823eceee58560f72cd4cc69ae12432354f435"
+}
