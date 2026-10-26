@@ -34,8 +34,14 @@ The canonical digest covers the sorted-key, compact JSON serialization of the co
 
 ## Citation
 
-Akhtar, M. A. K. (2026). *The First Spin-Resolved Spectral Discrepancy in a Narain Two-Torus Family: Exact Thresholds, Symmetry Boundaries, and Stability*.
+Akhtar, M. A. K. (2026). *The First Spin-Resolved Spectral Discrepancy in a Narain Two-Torus Family: Exact Thresholds, Symmetry Boundaries, and Stability* (Version V1). Zenodo. https://doi.org/10.5281/zenodo.23666390
 
 ## Scope
 
 These are zero-mode energy–spin calculations in the stated normalization; they do not assert an inequivalence of complete oscillator-dressed string theories. The repository root separately documents the earlier inverse-spectral investigation.
+
+## Copyright and license
+
+Copyright © 2026 Mohammad Amir Khusru Akhtar.
+
+The original verification code and computational materials in this directory are licensed under the **Apache License, Version 2.0 (Apache-2.0)**. See the repository-root [LICENSE](../../LICENSE) and [NOTICE](../../NOTICE). The research article and third-party works retain their respective copyright and publication terms.
